@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#C900BCD4"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/myTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Điều khiển công tắc"
+            android:textSize="30dp"
+            android:textColor="#ffffff"
+            android:gravity="center"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="30"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+
+
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:background="#5C2196F3"
+                >
+
+                <!-- Left LinearLayout for TextView and ImageView -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical">
+
+                    <!-- TextView -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dung dịch 1"
+                        android:textSize="13sp"/>
+
+                    <!-- ImageView -->
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+
+                        android:src="@drawable/test"
+                        android:layout_marginTop="10dp"/>
+
+                </LinearLayout>
+
+                <!-- Right LabeledSwitch -->
+                <com.github.angads25.toggle.widget.LabeledSwitch
+                    android:id="@+id/dd1"
+                    android:layout_width="125dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="8dp"
+                    android:enabled="true"
+                    android:textSize="18sp"
+                    app:colorBorder="#FFC107"
+                    app:colorDisabled="#ffffff"
+                    app:colorOff="#FF9800"
+                    app:colorOn="#FFC107"
+                    app:on="true"
+                    app:textOff="off"
+                    app:textOn="on" />
+
+            </LinearLayout>
+
+
+            <!-- Button 2 -->
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:orientation="vertical">
+
+            <!-- You can add views or other layouts here as needed -->
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="90dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:background="#5C2196F3">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical">
+
+                    <!-- TextView -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dung dịch 2"
+                        android:textSize="13sp"/>
+
+                    <!-- ImageView -->
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+
+                        android:src="@drawable/test"
+                        android:layout_marginTop="10dp"/>
+
+                </LinearLayout>
+
+                <com.github.angads25.toggle.widget.LabeledSwitch
+                    android:id="@+id/dd2"
+                    android:layout_width="125dp"
+                    android:layout_height="80dp"
+                    android:enabled="true"
+                    android:textSize="18sp"
+                    app:colorBorder="#FFC107"
+                    app:colorDisabled="#ffffff"
+                    app:colorOff="#FF9800"
+                    app:colorOn="#FFC107"
+                    app:on="false"
+                    app:textOff="off"
+                    app:textOn="on" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="90dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:background="#5C2196F3"
+                android:layout_marginLeft="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical">
+
+                    <!-- TextView -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dung dịch 3"
+                        android:textSize="13sp"/>
+
+                    <!-- ImageView -->
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+
+                        android:src="@drawable/test"
+                        android:layout_marginTop="10dp"/>
+
+                </LinearLayout>
+
+                <com.github.angads25.toggle.widget.LabeledSwitch
+                    android:id="@+id/dd3"
+                    android:layout_width="125dp"
+                    android:layout_height="80dp"
+                    android:enabled="true"
+                    android:textSize="18sp"
+                    app:colorBorder="#FFC107"
+                    app:colorDisabled="#ffffff"
+                    app:colorOff="#FF9800"
+                    app:colorOn="#FFC107"
+                    app:on="true"
+                    app:textOff="off"
+                    app:textOn="on" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="30"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+
+
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:background="#5C2196F3">
+
+                <!-- Left LinearLayout for TextView and ImageView -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical">
+
+                    <!-- TextView -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Máy tưới 1"
+                        android:textSize="13sp"/>
+
+                    <!-- ImageView -->
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+
+                        android:src="@drawable/file"
+                        android:layout_marginTop="10dp"/>
+
+                </LinearLayout>
+
+                <!-- Right LabeledSwitch -->
+                <com.github.angads25.toggle.widget.LabeledSwitch
+                    android:id="@+id/mt1"
+                    android:layout_width="125dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="8dp"
+                    android:enabled="true"
+                    android:textSize="18sp"
+                    app:colorBorder="#4CAF50"
+                    app:colorDisabled="#ffffff"
+                    app:colorOff="#CDDC39"
+                    app:colorOn="#009688"
+                    app:on="true"
+                    app:textOff="off"
+                    app:textOn="on" />
+
+            </LinearLayout>
+
+
+            <!-- Button 2 -->
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:orientation="vertical">
+
+            <!-- You can add views or other layouts here as needed -->
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+
+            <LinearLayout
+                android:layout_width="190dp"
+                android:layout_height="90dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:background="#5C2196F3">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical">
+
+                    <!-- TextView -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Máy tưới 2"
+                        android:textSize="13sp"/>
+
+                    <!-- ImageView -->
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+
+                        android:src="@drawable/file"
+                        android:layout_marginTop="10dp"/>
+
+                </LinearLayout>
+
+                <com.github.angads25.toggle.widget.LabeledSwitch
+                    android:id="@+id/mt2"
+                    android:layout_width="125dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="8dp"
+                    android:enabled="true"
+                    android:textSize="18sp"
+                    app:colorBorder="#4CAF50"
+                    app:colorDisabled="#ffffff"
+                    app:colorOff="#CDDC39"
+                    app:colorOn="#009688"
+                    app:on="true"
+                    app:textOff="off"
+                    app:textOn="on" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="190dp"
+                android:layout_height="90dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:background="#5C2196F3"
+                android:layout_marginLeft="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical">
+
+                    <!-- TextView -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Máy tưới 3"
+                        android:textSize="13sp"/>
+
+                    <!-- ImageView -->
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+
+                        android:src="@drawable/file"
+                        android:layout_marginTop="10dp"/>
+
+                </LinearLayout>
+
+                <com.github.angads25.toggle.widget.LabeledSwitch
+                    android:id="@+id/mt3"
+                    android:layout_width="125dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="8dp"
+                    android:enabled="true"
+                    android:textSize="18sp"
+                    app:colorBorder="#4CAF50"
+                    app:colorDisabled="#ffffff"
+                    app:colorOff="#CDDC39"
+                    app:colorOn="#009688"
+                    app:on="true"
+                    app:textOff="off"
+                    app:textOn="on" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="30"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="90dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:background="#5C2196F3">
+
+
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- ImageView and TextView -->
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <!-- ImageView -->
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/water_pump2"
+                        android:layout_marginRight="0dp"/> <!-- Adjust margin as needed -->
+
+                    <!-- TextView -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="Máy bơm 1"
+                        android:textSize="20sp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <com.github.angads25.toggle.widget.LabeledSwitch
+                android:id="@+id/mb1"
+                android:layout_width="150dp"
+                android:layout_height="70dp"
+                android:enabled="true"
+                android:textSize="18sp"
+                app:colorBorder="#673AB7"
+                app:colorDisabled="#ffffff"
+                app:colorOff="#F44336"
+                app:colorOn="#FFC107"
+                app:on="false"
+                app:textOff="off"
+                app:textOn="on" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:orientation="vertical">
+
+            <!-- You can add views or other layouts here as needed -->
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="90dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:background="#5C2196F3">
+
+
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- ImageView and TextView -->
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <!-- ImageView -->
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/water_pump2"
+                        android:layout_marginRight="0dp"/> <!-- Adjust margin as needed -->
+
+                    <!-- TextView -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="Máy bơm 2"
+                        android:textSize="20sp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <com.github.angads25.toggle.widget.LabeledSwitch
+                android:id="@+id/mb2"
+                android:layout_width="150dp"
+                android:layout_height="70dp"
+                android:enabled="true"
+                android:textSize="18sp"
+                app:colorBorder="#673AB7"
+                app:colorDisabled="#ffffff"
+                app:colorOff="#F44336"
+                app:colorOn="#FFC107"
+                app:on="false"
+                app:textOff="off"
+                app:textOn="on" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+        <!-- Button 1 -->
+
+        <!-- Button 3 -->
+
+
+
+
+
+
+</LinearLayout>
